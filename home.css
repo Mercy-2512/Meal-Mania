@@ -1,0 +1,203 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather',serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(food.jpg);
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+}
+.logo {
+    max-width: 100px;
+    height: auto;
+    top:0;
+    left: 0;
+    position: fixed;
+  }
+.navbar {
+    text-decoration: solid;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    background-color: #A67B5B;
+    position: sticky;
+    justify-content: center;
+    border-radius: 3px;
+    height: 100px;
+}
+.navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar .logo-text {
+    margin-right: auto;
+}
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 20px 0px;
+    }
+
+        .navbar ul li {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: black;
+                padding: 8px 25px;
+                transition: all .5s ease;
+            }
+                .navbar ul li a:hover {
+                    background-color: white;
+                    color:#A67B5B;
+                    box-shadow: 0 0 10px gray;
+                }
+#home {
+    width:60%;
+    margin:20px auto 0;
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+    bottom: 40px;
+}
+#home h1 {
+        margin-bottom: 30px;
+        font-size: 25px;
+        color: #000;
+}
+#home h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+        color: #000;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #000;
+}
+ .container {
+    
+        margin: 0;
+        background-color: transparent;
+        width: 700px;
+        height: 450px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 10px #A67B5B;
+        text-align: center;
+        color: black;
+        font-size: 14px;
+        opacity: 0.9;
+        align-items: center;
+        display: flexbox;
+      }
+      
+footer {
+    padding: 10px;
+    margin-top: auto;
+    background-color: #A67B5B;
+    color: #000;
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+}
+footer img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+.recipes{
+    background: #d4a682;
+    width: 80%;
+    height:400px;
+    margin: auto;
+    font-size: 28px;
+    font-weight: 500;
+}
+#recipe{
+    width:60%;
+    margin:200px auto 0;
+    color:black;
+    text-align: center;
+}
+#recipe h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+#recipe p{
+    margin-bottom:40px;
+    font-size:24px;
+}
+.recipebtn{
+    width: 25%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #A67B5B;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 20px;
+    border-radius: 30px;
+    left: 20px;
+    color: black;
+    bottom: 40px;
+}
+.recipebtn:hover {
+    background:white;
+    color: #d4a682;
+    box-shadow: 0 0 20px 9px #A67B5B;
+}
+#login {
+    width:60%;
+    margin:200px auto 0;
+    color:black;
+    font-size: 24px;
+    text-align: center;
+}
+#login h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+#login p{
+    margin-bottom: 40px;
+    font-weight: 24px;
+}
+#login button {
+    width: 25%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #A67B5B;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 24px;
+    border-radius: 30px;
+    left: 30px;
+    color: black;
+}
+#login button:hover {
+    background: white;
+    cursor: pointer;
+    color: #82cd47;
+    box-shadow: 0 0 20px 9px #A67B5B;
+}
+a{
+    text-decoration: none;
+}

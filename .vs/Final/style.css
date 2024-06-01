@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(ru.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.button {
+    width: 200px;
+    height: 60px;
+    font-family: Century;
+    background-color: #549db9;
+    color: white;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 40px;
+}
+button:hover {
+    background: #38cc44;
+    cursor: pointer;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+a{
+    text-decoration:none;
+}

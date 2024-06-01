@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(food.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.logo {
+    max-width: 100px;
+    height: auto;
+    top:0;
+    left: 0;
+    position: fixed;
+  }
+.navbar {
+    text-decoration: solid;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    background-color: #A67B5B;
+    position: sticky;
+    justify-content: center;
+    border-radius: 3px;
+    height: 100px;
+}
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 20px 0px;
+    }
+
+        .navbar ul li {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: black;
+                padding: 8px 25px;
+                transition: all .5s ease;
+            }
+                .navbar ul li a:hover {
+                    background-color: white;
+                    color:#A67B5B;
+                    box-shadow: 0 0 10px gray;
+                }
+                .addform{       
+                    background-color: #d4a682;
+                    width: 550px;
+                    height:400px;
+                    margin: auto;
+
+                }
+
+footer {
+    padding: 10px;
+    margin-top: auto;
+    background-color: #A67B5B;
+    color: #000;
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+}
+footer img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+.navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar .logo-text {
+    margin-right: auto;
+}

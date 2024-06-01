@@ -1,0 +1,11 @@
+﻿*{
+    font-family:Britannic;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(food.png);
+    background-position: unset;
+    text-align: match-parent;
+}

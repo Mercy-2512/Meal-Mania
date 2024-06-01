@@ -1,0 +1,36 @@
+﻿    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Number Guessing Game</title>
+        <link rel="stylesheet" href="randomGuess.css">
+    </head>
+    <body>
+        <div class="game">
+            <div class="gamingArea">
+                <h1>Number Guessing Game</h1>
+                <p>Guess a random number between 1 and 100.</p>
+                <p>You have 3 attempts to guess the right answer.</p>
+                <br>
+                <div id="area">
+                    <form class="form">
+                        <label for="guessField" id="guess">Enter a number</label>
+                        <input type="text" id="guessField" class="guessField">
+                        <input type="submit" id="subt" value="Submit" class="guessSubmit">
+                        <input type="submit" id="restart" value="Restart Game" class="restartSubmit">
+                    </form>
+                    <div class="resultParas">
+                        <p class="last_p">Previous Guesses: <span class="guesses"></span></p>
+                        <p class="last_p">Guesses Remaining: <span class="lastResult">3</span></p>
+                        <p class="lowOrHi"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="randomGuess.js"></script>
+    </body>
+</html>

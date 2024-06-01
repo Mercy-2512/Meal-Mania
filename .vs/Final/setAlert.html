@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Set Alert</title>
+    <link rel="stylesheet" href="setAlert.css">
+</head>
+        
+    <body>
+        <h1>Set Alert on Transactions</h1>
+        <div class="box">
+            <p>Set alert on transactions on a daily,weekly,monthly,yearly basis.</p>
+        </div>
+        <div class="box1">
+            <p>Set the threshold amount for each option selected.If the transactions cross the limit, you will be notified through SMS and mail.This would consider other expenses except EMI.</p>
+        </div>
+        <form autocomplete="on">
+            <div class="duration">
+                <ul>
+                    <label for="time">Set alert on transactions:</label>
+                    <br>
+
+                    <li>
+                        <input type="checkbox" id="day" name="day" value="day">
+                        <label for="day">For a day</label><br>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><input type="text" id="r1" value="" placeholder="Enter threshold amount"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="week" name="week" value="week">
+                        <label for="week">For a Week</label><br>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><input type="text" id="r1" value="" placeholder="Enter threshold amount"></li>
+                            </ul>
+                        </div>
+                    <li>
+                        <input type="checkbox" id="month" name="month" value="month">
+                        <label for="month">For a Month</label><br>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><input type="text" id="r1" value="" placeholder="Enter threshold amount"></li>
+                            </ul>
+                        </div>
+                    <li>
+                        <input type="checkbox" id="year" name="year" value="year">
+                        <label for="year">For a Year</label><br>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><input type="text" id="r1" value="" placeholder="Enter threshold amount"></li>
+                            </ul>
+                        </div>
+
+
+                </ul>
+            </div>
+            <button type="submit" class="mybutton">Set Alert</button>
+        </form>
+    </body>
+</html>

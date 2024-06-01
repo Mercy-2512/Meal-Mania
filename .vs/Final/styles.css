@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(ru.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 20px 0px;
+    }
+
+        .navbar ul li {
+            font-family: century;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: white;
+                padding: 8px 25px;
+                transition: all .5s ease;
+            }
+
+                .navbar ul li a:hover {
+                    background-color: #549db9;
+                    color: black;
+                    box-shadow: 0 0 10px gray;
+                }
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 577px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+}
+
+    #home img {
+        width: 535px;
+        height: 300px;
+        justify-content: center;
+        top: 25%;
+    }
+
+    #home p {
+        position: relative;
+        justify-content: center;
+        bottom: 0;
+        color:#000000;
+        top: 40%;
+        font-family: 'Gill Sans';
+        font-size: 4rem;
+    }
+
+    #home::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 900px;
+        width: 100%;
+        z-index: -1;
+        opacity: .8;
+    }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    background:#549db9;
+    align-items: center;
+    color:black;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+}
+
+.headings {
+    font-family: Geneva;
+    right: 20%;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 0px;
+    font-family: Century;
+    overflow: hidden;
+   
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+    #intro h2 {
+        font-family: century;
+        font-size: 3rem;
+        text-align: center;
+        margin: 40px 0px;
+    }
+
+    #intro p {
+        position: relative;
+        justify-content: right;
+        bottom: 0;
+        top: 40%;
+        font-family: 'Gill Sans';
+        font-size: 2rem;
+    }
+
+#login {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+#sign {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+    #sign h1 {
+        font-family: century;
+        font-size: 3rem;
+        color:black;
+        text-align: center;
+        margin: 40px 0px;
+    }
+
+#sign button {
+    width: 200px;
+    height: 60px;
+    background-color: #549db9;
+    color: white;
+    display: block;
+    margin: auto;
+    font-size: medium;
+}
+    #sign button:hover {
+        background: #38cc44;
+        cursor:pointer;
+    }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    background:linear-gradient(to top,#549db9 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+    .box:hover {
+        background-position: left bottom;
+        color: white;
+        border: none;
+    }
+
+#facilities {
+    padding: 10px;
+    bottom: 0;
+}
+
+    #facilities h1 {
+        font-family: century;
+        font-size: 3rem;
+        text-align: center;
+        margin: 40px 0px;
+    }
+    #facilities button {
+        width: 200px;
+        height: 60px;
+        background-color: #549db9;
+        color: white;
+        display: block;
+        margin: auto;
+       font-size: medium;
+    }
+        #facilities button:hover {
+
+             background: #38cc44;
+             cursor: pointer;
+         }
+        #facilities a{
+            text-decoration: none;
+
+        }
+
+.show-btn {
+    position: absolute;
+    left: 85%;
+    top: 85%;
+    width: 83px;
+    height: 75px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    background: #549db9;
+    color: black;
+}
+
+    .show-btn i {
+        margin: 15px 17px;
+        font-size: 32px;
+    }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#show:checked ~ .wrapper {
+    display: block;
+}
+
+.wrapper {
+    /* display: none;
+    width: 320px;
+    height: 580px;
+    margin: 80px;
+    background:white;
+    border-radius: 10px;
+    position:fixed;
+    bottom:55px;
+    top: 40px;
+    right: 0px;
+    left: 70%;*/
+    display: none;
+    width: 320px;
+    height: 380px;
+    margin: 80px;
+    background: white;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 55px;
+    top: 40px;
+    right: 0px;
+    left: 70%;
+}
+
+#text h2, h3 {
+    color:black;
+    font-family: 'Gill Sans';
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#text p {
+    color: black;
+    font-family: 'Gill Sans';
+    font-size: 17px;
+}
+#sign a{
+    text-decoration:none;
+}

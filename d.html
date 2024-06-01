@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		
+		label {
+			margin-top: 10px;
+			font-weight: bold;
+		}
+		
+		input[type="text"], input[type="email"], input[type="password"] {
+			margin-bottom: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+		}
+		
+		.image-input {
+			margin-bottom: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.image-input label {
+			cursor: pointer;
+			margin-top: 0;
+			font-size: 16px;
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			width: 250px;
+			height: 250px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		
+		.image-input label:hover {
+			background-color: #eee;
+		}
+		
+		.image-input input[type="file"] {
+			display: none;
+		}
+		
+		input[type="submit"] {
+			padding: 10px;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			font-weight: bold;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		
+		.error {
+			color: red;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div class="image-input">
+			<label for="profile-image" style="background-image: url('https://via.placeholder.com/250x250.png?text=Upload+Image');">Upload Image</label>
+			<input type="file" id="profile-image" name="profile-image" accept="image/*" onchange="loadFile(event)">
+		</div>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Submit">
+	</form>
+
+	<script>
+		var loadFile = function(event) {
+			var output = document.querySelector('label[for="profile-image"]');
+			output.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+			output.style.backgroundColor = "transparent";
+			output.style.backgroundSize = "cover";
+			output.style.backgroundPosition = "center";
+			output.style.backgroundRepeat = "no-repeat";
+		};
+	</script>
+</body>
+</html>

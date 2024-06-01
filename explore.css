@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather',serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+}
+.logo {
+    max-width: 100px;
+    height: auto;
+    top:0;
+    left: 0;
+    position: fixed;
+  }
+  #intro {
+        width:60%;
+        height: 100%;
+        margin:200px auto 0;
+        color:black;
+        text-align: center;
+  }
+  #intro p{
+    margin-bottom: 40px;
+    font-weight: 24px;
+  }
+.navbar {
+    text-decoration: solid;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    background-color: #A67B5B;
+    position: sticky;
+    justify-content: center;
+    border-radius: 3px;
+    height: 100px;
+}
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 20px 0px;
+    }
+
+        .navbar ul li {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: black;
+                padding: 8px 25px;
+                transition: all .5s ease;
+            }
+                .navbar ul li a:hover {
+                    background-color: white;
+                    color:#1c6758;
+                    box-shadow: 0 0 10px gray;
+                }
+a {
+    text-decoration: none;
+  }
+  .image-button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .image-button img {
+    width: 100px; 
+    height: 100px;
+  }
+  .button-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(44, 212, 86, 0.6); 
+    color: #fff; 
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .button-text:hover{
+    box-shadow: 0 0 10px #A67B5B; 
+  }
+  .image-button img :hover {
+    box-shadow: 0 0 10px #A67B5B;
+  }
+  footer {
+    padding: 10px;
+    margin-top: auto;
+    background-color: #A67B5B;
+    color: #000;
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+}
+footer img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar .logo-text {
+  margin-right: auto;
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
